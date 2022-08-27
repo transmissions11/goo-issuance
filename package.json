@@ -1,14 +1,14 @@
 {
-  "name": "foundry-template",
+  "name": "goo-issuance",
   "license": "MIT",
   "version": "1.0.0",
-  "description": "Streamlined template for getting started with Foundry and Solmate.",
+  "description": "GOO (Gradual Ownership Optimization) Issuance.",
   "files": [
     "src/**/*.sol"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/transmissions11/foundry-template.git"
+    "url": "git+https://github.com/transmissions11/goo-issuance.git"
   },
   "devDependencies": {
     "prettier": "^2.3.1",

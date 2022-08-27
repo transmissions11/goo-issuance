@@ -1,6 +1,6 @@
-# foundry-template • [![CI](https://github.com/transmissions11/foundry-template/actions/workflows/tests.yml/badge.svg)](https://github.com/transmissions11/foundry-template/actions/workflows/tests.yml)
+# goo-issuance • [![CI](https://github.com/transmissions11/goo-issuance/actions/workflows/tests.yml/badge.svg)](https://github.com/transmissions11/goo-issuance/actions/workflows/tests.yml)
 
-Streamlined template for getting started with Foundry and Solmate.
+GOO (Gradual Ownership Optimization) Issuance.
 
 ## Contributing
 
@@ -9,8 +9,8 @@ You will need a copy of [Foundry](https://github.com/foundry-rs/foundry) install
 ### Setup
 
 ```sh
-git clone https://github.com/transmissions11/foundry-template.git
-cd foundry-template
+git clone https://github.com/transmissions11/goo-issuance.git
+cd goo-issuance
 ```
 
 ### Run Tests
