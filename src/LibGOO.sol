@@ -11,6 +11,9 @@ library LibGOO {
     using FixedPointMathLib for uint256;
 
     /// @notice Compute goo balance based on emission multiple, last balance, and days elapsed.
+    /// @param emissionMultiple The multiple on emissions to consider when computing the balance.
+    /// @param lastBalanceWad The last checkpointed balance to apply the emission multiple over time to, scaled by 1e18.
+    /// @param timeElapsedWad The time elapsed since the last checkpoint, scaled by 1e18.
     function computeGOOBalance(
         uint256 emissionMultiple,
         uint256 lastBalanceWad,
