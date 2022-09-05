@@ -6,12 +6,12 @@ import {Vm} from "forge-std/Vm.sol";
 import {console} from "forge-std/console.sol";
 import {LibGOO} from "../../src/LibGOO.sol";
 
-contract EmissionCorrectnessTest is DSTestPlus {
+contract LibGOOCorrectnessTest is DSTestPlus {
     using LibGOO for uint256;
 
     Vm internal immutable vm = Vm(HEVM_ADDRESS);
 
-    function testFFIEmissionCorrectness(
+    function testFFILibGOOCorrectness(
         uint256 emissionMultiple,
         uint256 lastBalanceWad,
         uint256 timeElapsedWad
@@ -39,7 +39,7 @@ contract EmissionCorrectnessTest is DSTestPlus {
     ) private returns (uint256) {
         string[] memory inputs = new string[](8);
         inputs[0] = "python3";
-        inputs[1] = "test/diff_fuzz/python/compute_emissions.py";
+        inputs[1] = "test/correctness/python/compute_goo_balance.py";
         inputs[2] = "--emission_multiple";
         inputs[3] = vm.toString(_emissionMultiple);
         inputs[4] = "--last_balance";
