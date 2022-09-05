@@ -10,7 +10,7 @@ import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
 library LibGOO {
     using FixedPointMathLib for uint256;
 
-    /// @notice Compute goo balance based on emission multiple, last balance, and days elapsed.
+    /// @notice Compute goo balance based on emission multiple, last balance, and time elapsed.
     /// @param emissionMultiple The multiple on emissions to consider when computing the balance.
     /// @param lastBalanceWad The last checkpointed balance to apply the emission multiple over time to, scaled by 1e18.
     /// @param timeElapsedWad The time elapsed since the last checkpoint, scaled by 1e18.
@@ -21,7 +21,7 @@ library LibGOO {
     ) public pure returns (uint256) {
         unchecked {
             // We use wad math here because timeElapsedWad is, as the name indicates, a wad.
-            uint256 daysElapsedSquaredWad = timeElapsedWad.mulWadDown(timeElapsedWad);
+            uint256 timeElapsedSquaredWad = timeElapsedWad.mulWadDown(timeElapsedWad);
 
             // prettier-ignore
             return lastBalanceWad + // The last recorded balance.
@@ -29,7 +29,7 @@ library LibGOO {
             // Don't need to do wad multiplication since we're
             // multiplying by a plain integer with no decimals.
             // Shift right by 2 is equivalent to division by 4.
-            ((emissionMultiple * daysElapsedSquaredWad) >> 2) +
+            ((emissionMultiple * timeElapsedSquaredWad) >> 2) +
 
             timeElapsedWad.mulWadDown( // Terms are wads, so must mulWad.
                 // No wad multiplication for emissionMultiple * lastBalance
