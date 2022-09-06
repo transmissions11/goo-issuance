@@ -1,6 +1,6 @@
 # goo-issuance • [![CI](https://github.com/transmissions11/goo-issuance/actions/workflows/tests.yml/badge.svg)](https://github.com/transmissions11/goo-issuance/actions/workflows/tests.yml)
 
-GOO (Gradual Ownership Optimization) Issuance.
+GOO (Gradual Ownership Optimization) Issuance. Read the [whitepaper here](https://www.paradigm.xyz/2022/09/goo).
 
 ## Contributing
 
