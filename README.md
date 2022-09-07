@@ -12,6 +12,11 @@ You will need a copy of [Foundry](https://github.com/foundry-rs/foundry) install
 git clone https://github.com/transmissions11/goo-issuance.git
 cd goo-issuance
 ```
+### Build Project
+
+```sh
+forge build
+```
 
 ### Run Tests
 
