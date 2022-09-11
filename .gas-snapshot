@@ -1,4 +1,4 @@
-LibGOOTest:testGOOBalanceInitialBalance() (gas: 10524)
-LibGOOTest:testGOOBalanceMultiple() (gas: 10588)
-LibGOOTest:testGOOBalanceTimeElapsed() (gas: 10530)
-LibGOOTest:testGOOBalanceTimeElapsed2() (gas: 10607)
+LibGOOTest:testGOOBalanceInitialBalance() (gas: 10054)
+LibGOOTest:testGOOBalanceMultiple() (gas: 10046)
+LibGOOTest:testGOOBalanceTimeElapsed() (gas: 9988)
+LibGOOTest:testGOOBalanceTimeElapsed2() (gas: 9937)
