@@ -18,7 +18,7 @@ library LibGOO {
         uint256 emissionMultiple,
         uint256 lastBalanceWad,
         uint256 timeElapsedWad
-    ) public pure returns (uint256) {
+    ) internal pure returns (uint256) {
         unchecked {
             // We use wad math here because timeElapsedWad is, as the name indicates, a wad.
             uint256 timeElapsedSquaredWad = timeElapsedWad.mulWadDown(timeElapsedWad);
