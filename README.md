@@ -13,6 +13,11 @@ git clone https://github.com/transmissions11/goo-issuance.git
 cd goo-issuance
 forge install
 ```
+### Build Project
+
+```sh
+forge build
+```
 
 ### Run Tests
 
